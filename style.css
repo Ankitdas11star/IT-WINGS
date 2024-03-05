@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Oswald:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Oswald:wght@400;500&family=Varela+Round&display=swap');
+body{
+    background-color: antiquewhite;
+}
+video{
+    
+    position:absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height:200%;
+    z-index: -100;
+}
+*{
+    margin: 0px;
+    
+}
+nav {
+    background-color:transparent;
+    
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav ul li {
+    float: left;
+    align-items: center;
+    font-size: 2rem;
+}
+nav ul li.brand {
+    padding: 10px;
+}
+nav ul li.brand img {
+    vertical-align:middle;
+}
+nav ul li a {
+    display:flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:wavy;
+}
+nav ul li a:hover {
+    background-color: #111;
+}
+@media only screen and (max-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li {
+        float: none;
+        width: 100%;
+    }
+}
+nav ul li {
+    float: left;
+    padding: 40px;
+}
+nav ul li:last-child {
+    margin-right: 0; /* Remove margin for the last list item */
+}
+nav ul li.brand {
+    padding: 10px;
+    margin-right: 20px; /* Move the brand logo to the left */
+}
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li {
+        float: none;
+        width: 100%;
+        margin: 5px 0; /* Add margin between list items vertically */
+    }
+}
+.brand img{
+    background-color: transparent;
+    padding: 0 8px;
+}
+.brand{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1sr;
+    
+}
+.container{
+    min-height: 72vh;
+    background-color:transparent;
+    color:transparent;
+    font-family: 'Varela Round', sans-serif;
+    display: block;
+    margin: 23px auto;
+    width: 70%;
+    height: 100%;
+    border-radius: 10vh;
+    padding: 50px;
+    background-image:transparent('bg.jpg');
+}
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color:transparent;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icons{
+    margin-top: 5vh;
+}
+.icons i{
+    cursor: pointer;
+}
+#myProgressBar{
+    width: 80vh;
+    cursor: pointer;
+    transition: opacity 40s;
+    transition-delay: 100s;
+}
+.songItemContainer{
+   display: flex;
+   flex-wrap: wrap;
+   text-align: center;
+   justify-content:center;
+   
+}
+.songItem{
+    height: 23vh;
+    width: 200px; /* Adjust as needed */
+    margin: 10px;
+    text-align:center;
+    font-family: 'Varela Round', sans-serif;
+    background-color:transparent;
+    color:white;
+}
+.songItem img{
+    object-fit:cover;
+    width: 200px;
+    height: 150px;
+}
+@media only screen and (max-width: 600px) {
+    .head{
+        display: block;
+        align-items: center;
+    }
+    .songItem {
+        width: 100%; 
+    /* Take full width on smaller screens */
+    }
+}
+.timestamp{
+    margin: 12px 23px; 
+}
+.timestamp i{
+    cursor: pointer;
+}
+.songInfo{
+    position:absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+    opacity:1;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+#about-links {
+  display: none;
+  color: aliceblue; /* Initially hide the links */
+}
+
+li:hover #about-links {
+  display: block; /* Display the links when the parent <li> is hovered */
+}
+
+/* Style the links */
+#about-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#about-links ul li {
+  margin-bottom: 5px;
+}
+
+#about-links ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+#about-links ul li a:hover {
+  text-decoration: underline;
+}
