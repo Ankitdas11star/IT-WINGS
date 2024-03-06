@@ -5,7 +5,7 @@ body{
 }
 video{
     
-  position:fixed;
+    position:fixed;
     top: 0;
     left: 0;
     min-width: 100%;
@@ -58,7 +58,6 @@ nav ul li a:hover {
         float: none;
         width: 100%;
     }
-    
     
 }
 nav ul li {
@@ -176,8 +175,9 @@ nav ul li a {
     cursor: pointer;
 }
 .songInfo{
+    width: 20px;
     position:absolute;
-    left: 10vw;
+    right: 61vw;
     font-family: 'Varela Round', sans-serif;
     opacity:1;
 }
