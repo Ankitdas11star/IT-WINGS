@@ -8,7 +8,8 @@ video{
     position:absolute;
     top: 0;
     left: 0;
-    min-height:490%;
+    min-width: 100%;
+    min-height:590%;
     z-index: -100;
 }
 *{
